@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         val usuarioDatabase = UsuarioDataBase.getDataBase(this).usuarioDAO()
         val retornoInsert = usuarioDatabase.insertUser(usuarioModel().apply {
             this.nome = "João Pedro"
-            this.idade = 17
+            this.idade = 19
         })
 
         val retornoSelectMultiplo = usuarioDatabase.getAll()
